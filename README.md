@@ -28,27 +28,6 @@ export OPENAI_BASE_URL="https://api.openai.com/v1"
 export OPENAI_MODEL="gpt-4.1-mini-2025-04-14"
 ```
 
-## Quick Checks Without Data Or API Calls
-
-The reviewer package does not include sample data. The following commands check that
-the scripts import and expose their command-line interfaces without requiring an API
-key or dataset files:
-
-```bash
-python -m py_compile \
-  argument_tree_extraction.py \
-  value_decomposition.py \
-  consensus_clustering.py \
-  evaluation.py \
-  cluster_evidence_selection.py
-
-python argument_tree_extraction.py --help
-python value_decomposition.py --help
-python consensus_clustering.py --help
-python evaluation.py --help
-python cluster_evidence_selection.py --help
-```
-
 ## Full Pipeline Commands
 
 ```bash
@@ -84,6 +63,6 @@ The main clustering view used in the paper is `goal,principle,tradeoff,perspecti
 ## Notes
 
 This package removes private paths, API keys, generated intermediate files,
-non-essential experiment scripts, and sample data. It does not include the full
-experimental datasets because access to the dataset requires permission from its
+non-essential experiment scripts, and data. It does not include the full
+experimental datasets because access to the valueEval dataset requires permission from its
 creator; please visit the dataset project page to obtain it.
