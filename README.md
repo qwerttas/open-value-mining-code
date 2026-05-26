@@ -1,4 +1,4 @@
-# Open Value Mining Code
+# Open Value Mining
 
 This anonymized package contains the core implementation of the proposed value-mining pipeline. It focuses on the main algorithmic components.
 
